@@ -24,26 +24,17 @@ If we divide into three groups, we can see them separated as such:
 There are 3 possibilities we get from weighing the gold bars in these groups :
 
 Result 1:
-Left Bowl
-[0], [1], [2]       [3], [4], [5] 
-[ ], [ ], [ ]   >   [ ], [ ], [ ] 
-[ ], [ ], [ ]       [ ], [ ], [ ] 
+Left Bowl: [0], [1], [2]   >    Right Bowl: [3], [4], [5] 
 
 This means that all the gold bars in this weighing are not the same weight and we can see that if group [0],[1],[2] is heavier than group [3],[4],[5], we know that the fake gold bar is in group [3],[4],[5]. This will conclude that all the gold bars in group [6],[7],[8] are the same weight.
 
 Result 2:
-| 0 | 1 | 2 |       | 3 | 4 | 5 |
-|---|---|---|   <   |---|---|---| 
-|   |   |   |       |   |   |   |
-|   |   |   |       |   |   |   | 
+Left Bowl: [0], [1], [2]   <    Right Bowl: [3], [4], [5] 
 
 This means that all the gold bars in this weighing are not the same weight and we can see that if group [0],[1],[2] is lighter than group [3],[4],[5], we know that the fake gold bar is in group [0],[1],[2]. This will conclude that all the gold bars in group [6],[7],[8] are the same weight.
 
 Result 3:
-| 0 | 1 | 2 |       | 3 | 4 | 5 |
-|---|---|---|   =   |---|---|---| 
-|   |   |   |       |   |   |   |
-|   |   |   |       |   |   |   | 
+Left Bowl: [0], [1], [2]   =    Right Bowl: [3], [4], [5] 
 
 This means that all the gold bars in this weighing are  the same weigh, meaning the fake gold bar is not in group [0],[1],[2] or group [3],[4],[5]. This will also conclude that all the gold bars in group [6],[7],[8] are not the same weight, meaning the fake gold bar is within this group.
 
@@ -52,25 +43,16 @@ Now that we can narrowed down the group of gold bars the fake one is within, we 
 Let's say for example the group with the fake gold bar is group [3], [4], [5], we can separate the weighing as such to come to the solution. 
 
 Result 1:  
-| 3 |   |   |       | 4 |   |   |
-|---|---|---|   >   |---|---|---| 
-|   |   |   |       |   |   |   |
-|   |   |   |       |   |   |   | 
+Left Bowl: [3]   >    Right Bowl: [4]
 
 This concludes that gold bar [4] is the fake gold bar, since the fake gold bar is known to be lighter than the others. 
 
 Result 2:
-| 3 |   |   |       | 4 |   |   |
-|---|---|---|   <   |---|---|---| 
-|   |   |   |       |   |   |   |
-|   |   |   |       |   |   |   | 
+Left Bowl: [3]   <    Right Bowl: [4]
 
 This concludes that gold bar [3] is the fake gold bar, since the fake gold bar is known to be lighter than the others. 
 
 Result 3:
-| 3 |   |   |       | 4 |   |   |
-|---|---|---|   =   |---|---|---| 
-|   |   |   |       |   |   |   |
-|   |   |   |       |   |   |   | 
+Left Bowl: [3]   =    Right Bowl: [4]
 
 This concludes that gold bar [5] is the fake gold bar, since [3] and [4] are equal weights and the fake gold bar is known to be lighter than the others. 
