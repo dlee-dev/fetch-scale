@@ -11,5 +11,15 @@ export async function buttonClick(page, id) {
   await page.getByRole('button', { name: id }).click();
 }
 
+export async function resetButtonClick(page) {
+
+  await buttonClick(page, "reset");
+}
+
+export async function weighButtonClick(page) {
+
+  await buttonClick(page, "weigh");
+}
+
   
-module.exports = { navigateToFetchSdetChallenge, buttonClick };
+module.exports = { navigateToFetchSdetChallenge, buttonClick, resetButtonClick, weighButtonClick };
