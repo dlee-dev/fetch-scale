@@ -24,10 +24,10 @@ If we divide into three groups, we can see them separated as such:
 There are 3 possibilities we get from weighing the gold bars in these groups :
 
 Result 1:
-| 0 | 1 | 2 |       | 3 | 4 | 5 |
-|---|---|---|   >   |---|---|---| 
-|   |   |   |       |   |   |   |
-|   |   |   |       |   |   |   | 
+Left Bowl
+[0], [1], [2]       [3], [4], [5] 
+[ ], [ ], [ ]   >   [ ], [ ], [ ] 
+[ ], [ ], [ ]       [ ], [ ], [ ] 
 
 This means that all the gold bars in this weighing are not the same weight and we can see that if group [0],[1],[2] is heavier than group [3],[4],[5], we know that the fake gold bar is in group [3],[4],[5]. This will conclude that all the gold bars in group [6],[7],[8] are the same weight.
 
