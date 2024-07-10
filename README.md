@@ -49,9 +49,12 @@ Now that we can narrowed down the group of gold bars the fake one is within, we 
 Let's say for example the group with the fake gold bar is group [3], [4], [5], we can separate the weighing as such to come to the solution. 
 
 Result 1:
-|3| | |     |4| | |
-| | | |  >  | | | |
-| | | |     | | | |
+|Left Bowl| 
+|:--:     |    
+| 3 |   |   |       | 4 |   |   |
+|---|---|---|   >   |---|---|---| 
+|   |   |   |       |   |   |   |
+|   |   |   |       |   |   |   | 
 
 This concludes that gold bar [4] is the fake gold bar, since the fake gold bar is known to be lighter than the others. 
 
