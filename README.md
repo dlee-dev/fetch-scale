@@ -9,11 +9,11 @@
 # The Task
 1. We need to be able to find the **best** algorithm (mimnimum number of weighinbs for any possible fake bar position) that differentiates the fake gold bar. 
 2. Create a test automation project using any preferred language to perform the following:
-a. Clicks on buttons ("Weigh", "Reset")
-b. Getting the measurement results (field between the 'bowls') represented by Result button (it is not clickable to perform any actions, it will only give <', '>', or '=')
-c. Filling out the bowls with bar numbers (0 to 8)
-d. Getting a list of weighing (shown on the right of the bowls under 'Weighings')
-e. Clicking on the gold bar number at the bottom of the website and checking for the alert message
+  - a. Clicks on buttons ("Weigh", "Reset")
+  - b. Getting the measurement results (field between the 'bowls') represented by Result button (it is not clickable to perform any actions, it will only give <', '>', or '=')
+  - c. Filling out the bowls with bar numbers (0 to 8)
+  - d. Getting a list of weighing (shown on the right of the bowls under 'Weighings')
+  - e. Clicking on the gold bar number at the bottom of the website and checking for the alert message
 3. Code the algorithm from step 1 which uses a set of actions from step 2 to find the fake gold bar.
 
 # The approach 
