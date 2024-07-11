@@ -3,7 +3,7 @@ import { navigateToFetchSdetChallenge, weighButtonClick, resetButtonClick, getWe
 import { fillLeftBowl, fillRightBowl, leftBowl0, leftBowl1, leftBowl2, rightBowl0, rightBowl1, rightBowl2 } from '../utils/buttonOps';
 
   //Get Weighing List
-  test('After Weighing Reset', async ({ page }) => {
+  test('Get Weighing List', async ({ page }) => {
     await navigateToFetchSdetChallenge(page);
 
     await leftBowl0(page, '0');
