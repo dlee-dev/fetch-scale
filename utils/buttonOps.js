@@ -151,51 +151,117 @@ export async function rightBowl0(page, bar) {
   }
 
   export async function goldBar0(page) {
-
+    
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
+  
+    // Log when the button is clicked
     await page.getByRole('button', { name: '0' }).click();
-
   }
   export async function goldBar1(page) {
+
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
 
     await page.getByRole('button', { name: '1' }).click();
 
   }
   export async function goldBar2(page) {
 
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
+
     await page.getByRole('button', { name: '2' }).click();
 
   }
   export async function goldBar3(page) {
+
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
 
     await page.getByRole('button', { name: '3' }).click();
 
   }
   export async function goldBar4(page) {
 
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
+
     await page.getByRole('button', { name: '4' }).click();
 
   }
   export async function goldBar5(page) {
+
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
 
     await page.getByRole('button', { name: '5' }).click();
 
   }
   export async function goldBar6(page) {
 
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
+
     await page.getByRole('button', { name: '6' }).click();
 
   }
   export async function goldBar7(page) {
+
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
 
     await page.getByRole('button', { name: '7' }).click();
 
   }
   export async function goldBar8(page) {
 
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
+
     await page.getByRole('button', { name: '8' }).click();
 
   }
+
+  export async function goldBar(page, number) {
+
+    page.on('dialog', async dialog => {
+      console.log('Alert message:', dialog.message());
+      await page.waitForTimeout(1000); // Wait for 1 second
+      await dialog.dismiss(); // or dialog.accept() if you want to accept the alert
+    });
+
+    await page.getByRole('button', { name: number }).click();
+  }
+
   
 module.exports = { rightBowl0, rightBowl1, rightBowl2, rightBowl3, rightBowl4, rightBowl5, rightBowl6, rightBowl7, rightBowl8, 
     leftBowl0, leftBowl1, leftBowl2, leftBowl3, leftBowl4, leftBowl5, leftBowl6, leftBowl7, leftBowl8, 
-    fillLeftBowl, fillRightBowl, goldBar0, goldBar1, goldBar2, goldBar3, goldBar4, goldBar5, goldBar6, goldBar7, goldBar8 };
+    fillLeftBowl, fillRightBowl, goldBar0, goldBar1, goldBar2, goldBar3, goldBar4, goldBar5, goldBar6, goldBar7, goldBar8, goldBar };
