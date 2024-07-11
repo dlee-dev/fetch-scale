@@ -1,5 +1,8 @@
 # Fetch Coding Exercise SDET
 
+# Before cloning and running these tests
+## Please make sure you have playwright test runner installed. I used vscode extension playwright test runner to test locally. 
+
 # The Problem to be Solved
 ##  Given a balance scale and 9 gold bars of the same size and look. You don't know the exact **weight** of each bar, but you know they all weigh the same, except for one fake bar. The fake bar weighs **less** than the others. You need to find the fake gold bar by using the balance scales and the other gold bars. You can only place gold bars on the scale plates (bowls) and find which scale weighs more or less. 
 
